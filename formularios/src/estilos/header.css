@@ -1,0 +1,127 @@
+header {
+  background-color: #b1d9f8;
+  padding: 8px 830px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 10;
+}
+
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  display: none;
+}
+
+.horizontal-menu {
+  display: flex;
+}
+
+.vertical-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.main-menu__item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-menu__item a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.header-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.responsive-image {
+  width: 120px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-login {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .horizontal-menu {
+    display: none;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .header-image img {
+    content: url('../imagenes/ser2.jpg');
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-login {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .search-login input {
+    min-width: 120px;
+  }
+}
