@@ -1,49 +1,45 @@
 header {
-  background-color: #b1d9f8;
-  padding: 8px 830px;
+  background-color: #bcdef8;
+  padding: 12px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 97%;
   z-index: 10;
 }
 
-.search-login {
+.header-left {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
-.menu-container {
-  position: relative;
+.responsive-image {
+  width: 80px;
+  height: 90px;
 }
 
-.menu-icon {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  display: none;
+.boton-cuenta {
+  font-size: 22px; 
+  font-weight: bold; 
+  padding: 10px 22px;
+  margin-top: 17px;
+  background-color: #44a6f1;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 43px;
 }
 
 .horizontal-menu {
   display: flex;
-}
-
-.vertical-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 150px;
 }
 
 .main-menu {
@@ -64,64 +60,60 @@ header {
 }
 
 .main-menu__item a:hover {
-  background-color: #007BFF;
-  color: white;
+  background-color: #52bcec;
+  color: rgb(25, 12, 70);
 }
 
-.header-image {
-  display: flex;
-  justify-content: flex-end;
+.menu-container {
+  position: relative;
 }
 
-.responsive-image {
-  width: 120px;
+.menu-icon {
+  cursor: pointer;
+  width: 70px;
+  height: 60px;
+  background: none;
+  border: none;
+  font-size: 48px;
+  padding-right: 80px;
+  display: none;
+}
+
+.account-icon {
+  width: 70px;
   height: auto;
+  margin-right: 20px; 
 }
+.vertical-menu {
+  position: absolute;
+  top: 100%;
+  left: -90px; 
+  background-color: rgb(231, 238, 252);
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 140px;
+  transition: left 0.3s ease;
+}
+
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .search-login {
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .menu-icon {
-    display: block;
+    justify-content: space-between;
   }
 
   .horizontal-menu {
     display: none;
   }
 
+  .menu-icon {
+    display: block;
+  }
+
   .main-menu {
     flex-direction: column;
     gap: 5px;
   }
-
-  .header-image img {
-    content: url('../imagenes/ser2.jpg');
-  }
 }
 
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .top-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  .search-login {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .search-login input {
-    min-width: 120px;
-  }
-}

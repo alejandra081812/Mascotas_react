@@ -19,14 +19,11 @@ const Header = () => {
 
   return (
     <header className="header-container">
-      <div className="search-login">
-        <div className="tu-cuenta">
-          <button className="boton-cuenta">
-            <img src={require('../imagenes/logo-tucuenta.png')} alt="Cuenta" className="account-icon" />
-            Tu cuenta
-          </button>
-        </div>
-
+      <div className="header-left">
+        <img src={isMobile ? smallImage : largeImage} alt="Header" className="responsive-image" />
+      </div>
+      
+      <div className="header-right">
         {!isMobile && (
           <nav className="horizontal-menu">
             <ul className="main-menu">
@@ -37,6 +34,12 @@ const Header = () => {
             </ul>
           </nav>
         )}
+
+        <div className="account-section">
+          <button className="boton-cuenta">
+            Tu cuenta
+          </button>
+        </div>
 
         {isMobile && (
           <div className="menu-container">
@@ -55,10 +58,6 @@ const Header = () => {
             )}
           </div>
         )}
-
-        <div className="header-image">
-          <img src={isMobile ? smallImage : largeImage} alt="Header" className="responsive-image" />
-        </div>
       </div>
     </header>
   );

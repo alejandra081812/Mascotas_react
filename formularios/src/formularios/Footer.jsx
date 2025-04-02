@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../estilos/piedepagina.css';
+import '../estilos/footer.css';
+import { FaFacebook } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
     return (
@@ -11,18 +13,19 @@ const Footer = () => {
                     <ul>
                         <li>
                             <a href="#">
-                                <img src={require('../imagenes/what-logo.jpg')} alt="WhatsApp" />WhatsApp
+                              <BsWhatsapp />
+                               Whatsapp
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../imagenes/face-logo.jpg')} alt="Facebook" />
+                                <FaFacebook />
                                 Facebook
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../imagenes/instagram-logo.png')} alt="Instagram" />
+                                <BsInstagram />
                                 Instagram
                             </a>
                         </li>

@@ -61,9 +61,8 @@ const PetCare = () => {
         </section>
 
         <section id="servicios">
-          <section className="contenedor4">
-           
-          </section>
+        <section className="contenedor4">
+        </section>
           <div className="servicios-container">
             <div className="service-box">
               <p>Agenda tus citas fácilmente</p>
@@ -84,11 +83,63 @@ const PetCare = () => {
           </div>
         </section>
 
+         <section className="bg-gray-50 py-16 px-6">
+          <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-red-800 leading-tight">
+           Los mejores amigos, <br /> de tus mejores amigos.
+          </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10 max-w-6xl mx-auto">
+          {/* Tarjeta de Testimonio 1 */}
+          <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+          <img src="/testimonio1.png" alt="Bulldog feliz" className="rounded-xl w-44 h-44 object-cover mb-4" />
+          <p className="text-gray-700 italic">
+          "Excelente servicio. A pesar de que nos comentaron que atendían con previa cita, nos pasaron inmediatamente.
+          El lugar está limpio y la Dra. Adriana nos atendió muy bien. Lo recomiendo."
+          </p>
+          <p className="font-bold text-red-700 mt-4">Yuliana Vera</p>
+         </div>
+
+         {/* Tarjeta de Testimonio 2 */}
+          <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+          <img src="/testimonio2.png" alt="Perrito en Vetalia" className="rounded-xl w-44 h-44 object-cover mb-4" />
+          <p className="text-gray-700 italic">
+          "Llevé a mi perrita de 14 años a Vetalia porque tenía una bolita en la cara. El trato fue excelente, los veterinarios
+           son muy amables y profesionales."
+         </p>
+         <p className="font-bold text-red-700 mt-4">Inés Muñoz de Baena</p>
+         </div>
+
+        {/* Tarjeta de Testimonio 3 */}
+        <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+        <img src="/testimonio3.png" alt="Bulldog baño" className="rounded-xl w-44 h-44 object-cover mb-4" />
+        <p className="text-gray-700 italic">
+        "Me encantó y mi perrita estuvo muy feliz. Es muy especial para los baños porque le da ansiedad, pero me permitieron
+        estar ahí y eso ayudó a que mi perrita se sintiera tranquila."
+        </p>
+        <p className="font-bold text-red-700 mt-4">Elvira Gracia</p>
+        </div>
+
+        {/* Tarjeta de Testimonio 4 */}
+        <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+         <img src="/testimonio4.png" alt="Perrito feliz" className="rounded-xl w-44 h-44 object-cover mb-4" />
+        <p className="text-gray-700 italic">
+         "El lugar está increíble, tiene un diseño padrísimo y hace que no te sientas en una clínica veterinaria.
+         Me encantó y de ahora en adelante es a donde llevaré a mi perrita Olivia."
+        </p>
+        <p className="font-bold text-red-700 mt-4">Inés Muñoz de Baena</p>
+        </div>
+        </div>
+      </section>
+
+
+
         <section id="cuerpo2">
           <div className="service-box">
             <img src={nosotrosImg} alt="Sobre nosotros" className="service-icon" />
             <h2>Sobre nosotros</h2>
-            <p>En Pet Care, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
+            <p>En Pet Lovers, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
           </div>
           <div className="service-box">
             <img src={misionImg} alt="Nuestra Misión" className="service-icon" />
@@ -103,7 +154,7 @@ const PetCare = () => {
           <div className="service-box">
             <img src={valoresImg} alt="Valores que nos guían" className="service-icon" />
             <h2>Valores que nos guían</h2>
-            <p>En Pet Care, nuestros valores fundamentales son la compasión, la integridad...</p>
+            <p>En Pet Lovers, nuestros valores fundamentales son la compasión, la integridad...</p>
           </div>
         </section>
 
@@ -132,8 +183,8 @@ const PetCare = () => {
         </section>
 
         <section id="cuerpo5">
-          <h1>Información sobre Pet Care</h1>
-          <p>En Pet Care, nuestro compromiso es proporcionar una atención excepcional a tus mascotas...</p>
+          <h1>Información sobre Pet Lovers</h1>
+          <p>En Pet Lovers, nuestro compromiso es proporcionar una atención excepcional a tus mascotas...</p>
           <ul>
             <li><strong>Atención Veterinaria General:</strong> Revisiones, diagnósticos y tratamientos...</li>
             <li><strong>Vacunación:</strong> Programas de vacunación...</li>
