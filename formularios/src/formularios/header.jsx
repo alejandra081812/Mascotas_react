@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../estilos/header.css';
 import { TfiAlignRight } from "react-icons/tfi";
 import largeImage from '../imagenes/LOGO-PETLOVERS.png';
-import smallImage from '../imagenes/ser2.jpg';
+import smallImage from '../imagenes/LOGO (1).png';
 
 const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -20,10 +20,13 @@ const Header = () => {
   return (
     <header className="header-container">
       <div className="header-left">
-        <img src={isMobile ? smallImage : largeImage} alt="Header" className="responsive-image" />
+        <img src={largeImage} alt="Logo grande" className="logo-large" />
       </div>
-      
-      <div className="header-right">
+      <picture className='header4'>
+       <img src={smallImage} alt="Logo pequeño" className="logo-small" />
+      </picture>
+  
+      <section className="header-right">
         {!isMobile && (
           <nav className="horizontal-menu">
             <ul className="main-menu">
@@ -58,7 +61,7 @@ const Header = () => {
             )}
           </div>
         )}
-      </div>
+      </section>
     </header>
   );
 };

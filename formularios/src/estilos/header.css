@@ -17,9 +17,18 @@ header {
   align-items: center;
 }
 
-.responsive-image {
-  width: 80px;
-  height: 90px;
+.logo-large {
+  display: block;
+  width: 180px;
+  height: 120px;
+}
+
+.logo-small {
+  display:none;
+  width: 170px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .boton-cuenta {
@@ -52,7 +61,7 @@ header {
 
 .main-menu__item a {
   text-decoration: none;
-  color: #333;
+  color: #f5e3e3;
   font-size: 16px;
   padding: 8px 12px;
   border-radius: 5px;
@@ -60,8 +69,8 @@ header {
 }
 
 .main-menu__item a:hover {
-  background-color: #52bcec;
-  color: rgb(25, 12, 70);
+  background-color: #93d1f0;
+  color: rgb(13, 3, 48);
 }
 
 .menu-container {
@@ -70,13 +79,15 @@ header {
 
 .menu-icon {
   cursor: pointer;
-  width: 70px;
-  height: 60px;
-  background: none;
+  width: 60px;
+  height: 50px;
+  background: #44a6f1;
   border: none;
-  font-size: 48px;
-  padding-right: 80px;
-  display: none;
+  font-size: 38px;
+  padding-right: 10px;
+  display: block;
+  margin-top: 20px;
+  margin-right: 30px;
 }
 
 .account-icon {
@@ -84,6 +95,7 @@ header {
   height: auto;
   margin-right: 20px; 
 }
+
 .vertical-menu {
   position: absolute;
   top: 100%;
@@ -95,7 +107,6 @@ header {
   width: 140px;
   transition: left 0.3s ease;
 }
-
 
 @media (max-width: 768px) {
   header {
@@ -115,5 +126,12 @@ header {
     flex-direction: column;
     gap: 5px;
   }
-}
 
+  .logo-large {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+  }
+}
