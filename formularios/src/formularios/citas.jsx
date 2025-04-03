@@ -56,7 +56,7 @@ function Citas() {
                         </button>
                         <div className="tu-cuenta">
                             <button className="boton-cuenta">
-                                <img src={require('../imagenes/logo-tucuenta.png')} alt="Cuenta" className="account-icon" />
+                                
                                 Tu cuenta
                             </button>
                         </div>

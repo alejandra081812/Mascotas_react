@@ -23,7 +23,6 @@ function Mascotas() {
                         </button>
                         <div className="tu-cuenta">
                             <button className="boton-cuenta">
-                                <img src="https://raw.githubusercontent.com/Nore0729/imagenes-proyecto/refs/heads/main/logo-tucuenta.png?token=GHSAT0AAAAAADAHE2QY5MQJYXNYAVSWKDDQZ6OFBJA" alt="Cuenta" className="account-icon" />
                                 Tu cuenta
                             </button>
                         </div>

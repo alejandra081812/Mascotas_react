@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../estilos/header.css';
 import { TfiAlignRight } from "react-icons/tfi";
-import largeImage from '../imagenes/1ser.jpg';
+import largeImage from '../imagenes/LOGO-PETLOVERS.png';
 import smallImage from '../imagenes/ser2.jpg';
 
 const Header = () => {

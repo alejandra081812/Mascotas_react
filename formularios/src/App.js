@@ -10,6 +10,9 @@ import Servicios from "./formularios/servicios";
 import Contraseña2 from "./formularios/contraseña2";
 import Footer from "./formularios/Footer";
 import './estilos/footer.css';
+import UserWelcome from "./formularios/UserWelcome";
+
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/contraseña2" element={<Contraseña2 />} />
             <Route path="/propietario" element={<Propietario />} />
+            <Route path="/userwelcome" element={<UserWelcome/>}/>
             <Route path="/Ayuda" element={<Ayuda />} />
           </Routes>
         <Footer />

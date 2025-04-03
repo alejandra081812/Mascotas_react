@@ -49,6 +49,45 @@ const PetLovers = () => {
             </button>
           </div>
         </section><br></br><br></br><br></br>
+        <section id="info-section">
+       <div className="info-card">
+       <img
+              src={require("../imagenes/nosotros.png") || "/placeholder.svg"}
+              alt="Sobre nosotros"
+              className="service-icon"
+            />
+       <h2>Sobre nosotros</h2>
+       <p>En Pet Lovers, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
+       </div>
+       <div className="info-card">
+       <img
+              src={require("../imagenes/mision.png") || "/placeholder.svg"}
+              alt="Nuestra Misión"
+              className="service-icon"
+            />
+       <h2>Nuestra Misión</h2>
+       <p>Ofrecer atención veterinaria de alta calidad, basada en la compasión y el respeto...</p>
+       </div>
+       <div className="info-card">
+       <img
+              src={require("../imagenes/vision.png") || "/placeholder.svg"}
+              alt="Nuestra Visión"
+              className="service-icon"
+            />
+       <h2>Nuestra Visión</h2>
+       <p>Convertirnos en la clínica veterinaria de referencia en la comunidad...</p>
+       </div>
+       <div className="info-card">
+       <img
+              src={require("../imagenes/valores.png") || "/placeholder.svg"}
+              alt="Valores que nos guían"
+              className="service-icon"
+            />
+       <h2>Valores que nos guían</h2>
+       <p>En Pet Lovers, nuestros valores fundamentales son la compasión, la integridad...</p>
+       </div>
+      </section>
+
 
         <section id="servicios">
           <section className="contenedor4"></section>
@@ -113,45 +152,7 @@ const PetLovers = () => {
         </div>
       </section><br></br><br></br><br></br><br></br><br></br>
 
-      <section id="info-section">
-       <div className="info-card">
-       <img
-              src={require("../imagenes/nosotros.png") || "/placeholder.svg"}
-              alt="Sobre nosotros"
-              className="service-icon"
-            />
-       <h2>Sobre nosotros</h2>
-       <p>En Pet Lovers, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
-       </div>
-       <div className="info-card">
-       <img
-              src={require("../imagenes/mision.png") || "/placeholder.svg"}
-              alt="Nuestra Misión"
-              className="service-icon"
-            />
-       <h2>Nuestra Misión</h2>
-       <p>Ofrecer atención veterinaria de alta calidad, basada en la compasión y el respeto...</p>
-       </div>
-       <div className="info-card">
-       <img
-              src={require("../imagenes/vision.png") || "/placeholder.svg"}
-              alt="Nuestra Visión"
-              className="service-icon"
-            />
-       <h2>Nuestra Visión</h2>
-       <p>Convertirnos en la clínica veterinaria de referencia en la comunidad...</p>
-       </div>
-       <div className="info-card">
-       <img
-              src={require("../imagenes/valores.png") || "/placeholder.svg"}
-              alt="Valores que nos guían"
-              className="service-icon"
-            />
-       <h2>Valores que nos guían</h2>
-       <p>En Pet Lovers, nuestros valores fundamentales son la compasión, la integridad...</p>
-       </div>
-      </section>
-
+      
         <section id="cuerpo3">
           <h2>Conoce a nuestros veterinarios</h2>
           <div className="veterinario1">
@@ -175,7 +176,7 @@ const PetLovers = () => {
             Somos más que una veterinaria
             Reimaginamos el acceso a la experiencia veterinaria ofreciendo una amplia gama de servicios pensados en ti y tus mascotas, gracias a los cuales, maximizamos su calidad de vida previniendo y asegurando su bienestar, mientras los cuidamos y consentimos en cada momento.
           </p>
-          <img src={elegir} alt="mascotas" />
+          <img src={require("../imagenes/elegir.jpg") || "/placeholder.svg"} alt="mascotas" />
         </section>
 
         <section id="cuerpo5">
