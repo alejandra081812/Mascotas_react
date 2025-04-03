@@ -9,6 +9,9 @@ import imagenSer4 from '../imagenes/ser4.jpg';
 import nosotrosImg from '../imagenes/nosotros.png';
 import misionImg from '../imagenes/mision.png';
 import visionImg from '../imagenes/vision.png';
+import irec from '../imagenes/irec.jpg';
+import recl from '../imagenes/recl.jpg';
+import recr from '../imagenes/recr.jpg';
 import valoresImg from '../imagenes/valores.png';
 import vetmuj from '../imagenes/vetmuj.jpg';
 import vethom from '../imagenes/vethom.jpg';
@@ -39,7 +42,7 @@ const PetCare = () => {
     <div className="pet-care-app">
       <section id="bienvenida">
         <div className="texto-bienvenida">
-          <h2>¡Bienvenidos a Pet Lovers!</h2>
+          <h2 className='bien'>¡Bienvenidos a Pet Lovers!</h2>
         </div>
       </section>
 
@@ -61,7 +64,7 @@ const PetCare = () => {
         </section>
 
         <section id="servicios">
-        <section className="contenedor4">
+          <section className="contenedor4">
         </section>
           <div className="servicios-container">
             <div className="service-box">
@@ -83,52 +86,42 @@ const PetCare = () => {
           </div>
         </section>
 
-         <section className="bg-gray-50 py-16 px-6">
-          <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-red-800 leading-tight">
+        <section className="campo1">
+          <div className="solu">
+          <h2 className="recua">
            Los mejores amigos, <br /> de tus mejores amigos.
           </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10 max-w-6xl mx-auto">
-          {/* Tarjeta de Testimonio 1 */}
-          <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
-          <img src="/testimonio1.png" alt="Bulldog feliz" className="rounded-xl w-44 h-44 object-cover mb-4" />
-          <p className="text-gray-700 italic">
+          <div className="soluc">
+          {}
+          <div className="rep">
+          <img src={irec} alt="imagen de unas mascotas" />
+          <p className="textli">
           "Excelente servicio. A pesar de que nos comentaron que atendían con previa cita, nos pasaron inmediatamente.
           El lugar está limpio y la Dra. Adriana nos atendió muy bien. Lo recomiendo."
           </p>
-          <p className="font-bold text-red-700 mt-4">Yuliana Vera</p>
+          <p className="recua">Yuliana Vera</p>
          </div>
 
-         {/* Tarjeta de Testimonio 2 */}
-          <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
-          <img src="/testimonio2.png" alt="Perrito en Vetalia" className="rounded-xl w-44 h-44 object-cover mb-4" />
-          <p className="text-gray-700 italic">
+         {}
+          <div className="recuadro2">
+          <img src={recl} alt="imagen de unas mascotas" />
+          <p className="text700">
           "Llevé a mi perrita de 14 años a Vetalia porque tenía una bolita en la cara. El trato fue excelente, los veterinarios
            son muy amables y profesionales."
          </p>
-         <p className="font-bold text-red-700 mt-4">Inés Muñoz de Baena</p>
+         <p className="recua">Inés Muñoz de Baena</p>
          </div>
 
-        {/* Tarjeta de Testimonio 3 */}
-        <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
-        <img src="/testimonio3.png" alt="Bulldog baño" className="rounded-xl w-44 h-44 object-cover mb-4" />
-        <p className="text-gray-700 italic">
-        "Me encantó y mi perrita estuvo muy feliz. Es muy especial para los baños porque le da ansiedad, pero me permitieron
-        estar ahí y eso ayudó a que mi perrita se sintiera tranquila."
-        </p>
-        <p className="font-bold text-red-700 mt-4">Elvira Gracia</p>
-        </div>
-
-        {/* Tarjeta de Testimonio 4 */}
-        <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center">
-         <img src="/testimonio4.png" alt="Perrito feliz" className="rounded-xl w-44 h-44 object-cover mb-4" />
-        <p className="text-gray-700 italic">
+        {}
+        <div className="talle">
+        <img src={recr} alt="imagen de unas mascotas" />
+        <p className="gray700">
          "El lugar está increíble, tiene un diseño padrísimo y hace que no te sientas en una clínica veterinaria.
          Me encantó y de ahora en adelante es a donde llevaré a mi perrita Olivia."
         </p>
-        <p className="font-bold text-red-700 mt-4">Inés Muñoz de Baena</p>
+        <p className="coment">Inés Muñoz de Baena</p>
         </div>
         </div>
       </section>
