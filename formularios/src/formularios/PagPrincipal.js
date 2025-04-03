@@ -18,7 +18,7 @@ import vethom from '../imagenes/vethom.jpg';
 import elegir from '../imagenes/elegir.jpg';
 import '../estilos/PagPrincipal.css';
 
-const PetCare = () => {
+const PetLovers = () => {
   const imagenesCarrusel = [carrusel1, carrusel2, carrusel3];
   const [imagenActual, setImagenActual] = useState(0);
   const totalImagenes = imagenesCarrusel.length;
@@ -61,7 +61,7 @@ const PetCare = () => {
               &#10095;
             </button>
           </div>
-        </section>
+        </section><br></br><br></br><br></br>
 
         <section id="servicios">
           <section className="contenedor4">
@@ -84,7 +84,7 @@ const PetCare = () => {
               <img src={imagenSer4} alt="imagen de unas mascotas" />
             </div>
           </div>
-        </section>
+        </section><br></br><br></br><br></br>
 
         <section className="campo1">
           <div className="solu">
@@ -99,19 +99,19 @@ const PetCare = () => {
           <img src={irec} alt="imagen de unas mascotas" />
           <p className="textli">
           "Excelente servicio. A pesar de que nos comentaron que atendían con previa cita, nos pasaron inmediatamente.
-          El lugar está limpio y la Dra. Adriana nos atendió muy bien. Lo recomiendo."
+          El lugar está limpio y la Dra.  Ana López nos atendió muy bien. Lo recomiendo."
           </p>
-          <p className="recua">Yuliana Vera</p>
+          <p className="recua">Camila Vera</p>
          </div>
 
          {}
           <div className="recuadro2">
           <img src={recl} alt="imagen de unas mascotas" />
           <p className="text700">
-          "Llevé a mi perrita de 14 años a Vetalia porque tenía una bolita en la cara. El trato fue excelente, los veterinarios
+          "Llevé a mi perrita de 14 años a Pet Lovers porque tenía una bolita en la cara. El trato fue excelente, los veterinarios
            son muy amables y profesionales."
          </p>
-         <p className="recua">Inés Muñoz de Baena</p>
+         <p className="recua">Sebastian Lopez</p>
          </div>
 
         {}
@@ -119,37 +119,35 @@ const PetCare = () => {
         <img src={recr} alt="imagen de unas mascotas" />
         <p className="gray700">
          "El lugar está increíble, tiene un diseño padrísimo y hace que no te sientas en una clínica veterinaria.
-         Me encantó y de ahora en adelante es a donde llevaré a mi perrita Olivia."
+         Me encantó y de ahora en adelante es a donde llevaré a mi perrito Bruno."
         </p>
-        <p className="coment">Inés Muñoz de Baena</p>
+        <p className="coment">Juliana Muñoz </p>
         </div>
         </div>
+      </section><br></br><br></br><br></br><br></br><br></br>
+
+      <section id="info-section">
+       <div className="info-card">
+       <img src={nosotrosImg} alt="Sobre nosotros" className="info-icon" />
+       <h2>Sobre nosotros</h2>
+       <p>En Pet Lovers, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
+       </div>
+       <div className="info-card">
+       <img src={misionImg} alt="Nuestra Misión" className="info-icon" />
+       <h2>Nuestra Misión</h2>
+       <p>Ofrecer atención veterinaria de alta calidad, basada en la compasión y el respeto...</p>
+       </div>
+       <div className="info-card">
+       <img src={visionImg} alt="Nuestra Visión" className="info-icon" />
+       <h2>Nuestra Visión</h2>
+       <p>Convertirnos en la clínica veterinaria de referencia en la comunidad...</p>
+       </div>
+       <div className="info-card">
+       <img src={valoresImg} alt="Valores que nos guían" className="info-icon" />
+       <h2>Valores que nos guían</h2>
+       <p>En Pet Lovers, nuestros valores fundamentales son la compasión, la integridad...</p>
+       </div>
       </section>
-
-
-
-        <section id="cuerpo2">
-          <div className="service-box">
-            <img src={nosotrosImg} alt="Sobre nosotros" className="service-icon" />
-            <h2>Sobre nosotros</h2>
-            <p>En Pet Lovers, somos un equipo de profesionales apasionados por el bienestar de las mascotas...</p>
-          </div>
-          <div className="service-box">
-            <img src={misionImg} alt="Nuestra Misión" className="service-icon" />
-            <h2>Nuestra Misión</h2>
-            <p>Ofrecer atención veterinaria de alta calidad, basada en la compasión y el respeto...</p>
-          </div>
-          <div className="service-box">
-            <img src={visionImg} alt="Nuestra Visión" className="service-icon" />
-            <h2>Nuestra Visión</h2>
-            <p>Convertirnos en la clínica veterinaria de referencia en la comunidad...</p>
-          </div>
-          <div className="service-box">
-            <img src={valoresImg} alt="Valores que nos guían" className="service-icon" />
-            <h2>Valores que nos guían</h2>
-            <p>En Pet Lovers, nuestros valores fundamentales son la compasión, la integridad...</p>
-          </div>
-        </section>
 
         <section id="cuerpo3">
           <h2>Conoce a nuestros veterinarios</h2>
@@ -168,11 +166,13 @@ const PetCare = () => {
         </section>
 
         <section id="elegir">
-          <h2>¿Por qué elegir nuestra Veterinaria?</h2>
+          <h2 id="vete">¿Por qué elegir nuestra Veterinaria?</h2>
           <p id="elegir2">
             En momentos de emergencia, es fundamental contar con un equipo de profesionales dedicados y apasionados por las mascotas...
+            Somos más que una veterinaria
+            Reimaginamos el acceso a la experiencia veterinaria ofreciendo una amplia gama de servicios pensados en ti y tus mascotas, gracias a los cuales, maximizamos su calidad de vida previniendo y asegurando su bienestar, mientras los cuidamos y consentimos en cada momento.
           </p>
-          <img src={elegir} alt="Veterinario Juan Pérez" />
+          <img src={elegir} alt="mascotas" />
         </section>
 
         <section id="cuerpo5">
@@ -192,5 +192,5 @@ const PetCare = () => {
   );
 };
 
-export default PetCare;
+export default PetLovers;
 
