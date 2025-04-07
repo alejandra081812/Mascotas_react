@@ -39,39 +39,6 @@ function Citas() {
 
     return (
         <>
-            <header>
-                <div className="top-section">
-                    <div className="info-principal">
-                        <img 
-                            src={require('../imagenes/LOGO-PETLOVERS.png')} 
-                            alt="Logo Petlovers" 
-                            onClick={redirigirAlInicio}
-                            style={{ cursor: 'pointer' }}
-                        />
-                    </div>
-                    <div className="search-login">
-                        <input type="text" placeholder="¿Qué estás buscando?" aria-label="Buscar" />
-                        <button className="search-button">
-                            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Buscar" />
-                        </button>
-                        <div className="tu-cuenta">
-                            <button className="boton-cuenta">
-                                
-                                Tu cuenta
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <nav>
-                    <ul className="main-menu">
-                        <li className="main-menu__item"><Link to="/">INICIO</Link></li>
-                        <li className="main-menu__item"><Link to="/login">USUARIOS</Link></li>
-                        <li className="main-menu__item"><Link to="Citas">CITAS</Link></li>
-                        <li className="main-menu__item"><Link to="#">SERVICIOS</Link></li>
-                        <li className="main-menu__item"><Link to="#">AYUDA</Link></li>
-                    </ul>
-                </nav> 
-            </header>
             <div className="cita-contenedor">
                 <div className="cita-formulario-contenedor">
                     <div className="cita-formulario">

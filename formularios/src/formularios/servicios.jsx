@@ -3,67 +3,120 @@ import '../estilos/servicios.css';
 
 function Servicios() {
   return (
-    <section className="services">
-      <h1>Somos más que una veterinaria</h1>
-      <p>
-        Ofrecemos una amplia gama de servicios pensados en ti y tus mascotas, gracias a los cuales, maximizamos su calidad de vida previniendo y asegurando su bienestar, mientras los cuidamos y consentimos en cada momento.
-      </p>
-      <div className="servicio">
-        <div className="servicio1">
-          <h3>Bienestar</h3>
-          <ul>
-            <li>Vacunación</li>
-            <li>Baño y estética</li>
-            <li>Profilaxis dental</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
+    <section className="servicios-seccion">
+      {/* Título y descripción */}
+      <div className="servicios-encabezado">
+        <h1>Somos más que una veterinaria</h1>
+        <p>
+          Ofrecemos una amplia gama de servicios pensados en ti y tus mascotas, gracias a los cuales, maximizamos su
+          calidad de vida previniendo y asegurando su bienestar, mientras los cuidamos y consentimos en cada momento.
+        </p>
+      </div>
+
+      {/* Contenedor de tarjetas de servicios - exactamente 3 por fila */}
+      <div className="servicios-contenedor">
+        {/* Servicio 1: Bienestar */}
+        <div className="tarjeta-servicio">
+          <div className="imagen-contenedor">
+            <img
+              src={require("../imagenes/Bienestar.jpg") || "/placeholder.svg"}
+              alt="Servicio de Bienestar"
+              className="imagen-servicio"
+            />
+            <div className="overlay-titulo">
+              <h3>Bienestar</h3>
+            </div>
+          </div>
+
+          <div className="contenido-servicio">
+            <ul>
+              <li>
+                <span className="check-icon">✓</span>Vacunación
+              </li>
+              <li>
+                <span className="check-icon">✓</span>Baño y estética
+              </li>
+              <li>
+                <span className="check-icon">✓</span>Profilaxis dental
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="servicio1">
-          <h3>Urgencias</h3>
-          <ul>
-            <li>Atención 24 horas</li>
-            <li>Hospitalización</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
+
+        {/* Servicio 2: Urgencias */}
+        <div className="tarjeta-servicio">
+          <div className="imagen-contenedor">
+            <img
+              src={require("../imagenes/hospital.jpg") || "/placeholder.svg"}
+              alt="Servicio de Urgencias"
+              className="imagen-servicio"
+            />
+            <div className="overlay-titulo">
+              <h3>Urgencias</h3>
+            </div>
+          </div>
+
+          <div className="contenido-servicio">
+            <ul>
+              <li>
+                <span className="check-icon">✓</span>Atención 24 horas
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="servicio1">
-          <h3>Cirugías</h3>
-          <ul>
-            <li>Esterilización</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
+
+        {/* Servicio 3: Cirugías */}
+        <div className="tarjeta-servicio">
+          <div className="imagen-contenedor">
+            <img
+              src={require("../imagenes/operar.jpg") || "/placeholder.svg"}
+              alt="Servicio de Cirugías"
+              className="imagen-servicio"
+            />
+            <div className="overlay-titulo">
+              <h3>Cirugías</h3>
+            </div>
+          </div>
+
+          <div className="contenido-servicio">
+            <ul>
+              <li>
+                <span className="check-icon">✓</span>Esterilización
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="servicio1">
-          <h3>Diagnóstico</h3>
-          <ul>
-            <li>Rayos X</li>
-            <li>Ultrasonido</li>
-            <li>Pruebas de laboratorio</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
-        </div>
-        <div className="servicio1">
-          <h3>Especialidades</h3>
-          <ul>
-            <li>Ortopedia</li>
-            <li>Cardiología</li>
-            <li>Oftalmología</li>
-            <li>Oncología</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
-        </div>
-        <div className="servicio1">
-          <h3>Otros Servicios</h3>
-          <ul>
-            <li>Certificados de viaje</li>
-            <li>Etología</li>
-            <li>Farmacia y alimento</li>
-          </ul>
-          <a href="#">Ver más &rarr;</a>
+
+        {/* Servicio 5: Especialidades */}
+        <div className="tarjeta-servicio">
+          <div className="imagen-contenedor">
+            <img
+              src={require("../imagenes/ortopedia.jpg") || "/placeholder.svg"}
+              alt="Servicio de Especialidades"
+              className="imagen-servicio"
+            />
+            <div className="overlay-titulo">
+              <h3>Especialidades</h3>
+            </div>
+          </div>
+
+          <div className="contenido-servicio">
+            <ul>
+              <li>
+                <span className="check-icon">✓</span>Ortopedia
+              </li>
+              <li>
+                <span className="check-icon">✓</span>Cardiología
+              </li>
+              <li>
+                <span className="check-icon">✓</span>Oftalmología
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Servicios;
+export default Servicios
