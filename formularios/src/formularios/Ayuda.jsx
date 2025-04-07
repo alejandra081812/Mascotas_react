@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../estilos/Ayuda.css';
 import { Mail, Phone, Clock, MapPin, Users, ChevronRight } from "lucide-react"
 
-
 function Ayuda() {
   return (
     <>
@@ -78,6 +77,5 @@ function Ayuda() {
     </>
   )
 }
-
 export default Ayuda
 

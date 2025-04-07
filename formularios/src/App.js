@@ -11,6 +11,7 @@ import Contraseña2 from "./formularios/contraseña2";
 import Footer from "./formularios/Footer";
 import './estilos/footer.css';
 import UserWelcome from "./formularios/UserWelcome";
+import PoliticasP from "./formularios/PoliticasP";
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/propietario" element={<Propietario />} />
             <Route path="/userwelcome" element={<UserWelcome/>}/>
             <Route path="/Ayuda" element={<Ayuda />} />
+            <Route path="/politicas" element={<PoliticasP />} />
           </Routes>
         <Footer />
     </BrowserRouter>

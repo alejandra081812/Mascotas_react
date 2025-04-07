@@ -1,5 +1,6 @@
 import React from 'react';
 import '../estilos/footer.css';
+import { Link } from 'react-router-dom'; 
 import { FaFacebook } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -50,7 +51,11 @@ const Footer = () => {
                 </div>
                
             </div>
-            <p>&copy; 2024 PET LOVERS. Todos los derechos reservados.</p>
+            <div className="footer-copyright">
+                &copy; 2024 PET LOVERS. <Link to="/politicas" className="policy-link">
+                    Política de Privacidad
+                </Link>
+            </div>
         </footer>
     );
 };
