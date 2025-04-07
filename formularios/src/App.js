@@ -21,7 +21,7 @@ function App() {
         <Header />
           <Routes>
             <Route path="/" element={<PagPrincipal />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/Login" element={<Login />} />
             <Route path="/contraseña1" element={<Contraseña1 />} />
             <Route path="/citas" element={<Citas />} />
             <Route path="/servicios" element={<Servicios />} />

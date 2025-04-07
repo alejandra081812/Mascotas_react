@@ -20,50 +20,13 @@ function Propietario() {
         }
         return age;
     };
-
-    // Función para enviar el formulario
     const onSubmit = (data) => {
         console.log(data);
         navigate('/');
     };
 
     return (
-        <>
-            {/* Header completo (idéntico al original) */}
-            <header>
-                <div className="top-section">
-                    <div className="info-principal">
-                        <img 
-                            src={require('../imagenes/LOGO-PETLOVERS.png')} 
-                            alt="Logo Petlovers" 
-                            onClick={() => navigate('/')}
-                            style={{ cursor: 'pointer' }}
-                        />
-                    </div>
-                    <div className="search-login">
-                        <input type="text" placeholder="¿Qué estás buscando?" aria-label="Buscar" />
-                        <button className="search-button">
-                            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Buscar" />
-                        </button>
-                        <div className="tu-cuenta">
-                            <button className="boton-cuenta">
-                                Tu cuenta
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <nav>
-                    <ul className="main-menu">
-                        <li className="main-menu__item"><Link to="/">INICIO</Link></li>
-                        <li className="main-menu__item"><Link to="/usuarios">USUARIOS</Link></li>
-                        <li className="main-menu__item"><Link to="/citas">CITAS</Link></li>
-                        <li className="main-menu__item"><Link to="/servicios">SERVICIOS</Link></li>
-                        <li className="main-menu__item"><Link to="/productos">PRODUCTOS</Link></li>
-                    </ul>
-                </nav>
-            </header>
-
-            {/* Contenido del formulario con validaciones mejoradas */}
+        <> 
             <div className="cita-contenedor">
                 <div className="cita-formulario-contenedor">
                     <form onSubmit={handleSubmit(onSubmit)} className="cita-formulario">

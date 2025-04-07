@@ -39,9 +39,9 @@ const Header = () => {
         )}
 
         <div className="account-section">
-          <button className="boton-cuenta">
+          <Link to="/Login" className="boton-cuenta">
             Tu cuenta
-          </button>
+          </Link>
         </div>
 
         {isMobile && (
